@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>大家来找茬儿</title>
+    <script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/375;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=375,user-scalable=no, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=375, user-scalable=no,target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=375, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+            _vds.push(['setAccountId', '8b53dcac6ad3c05e']);
+            (function() {
+              var vds = document.createElement('script');
+              vds.type='text/javascript';
+              vds.async = true;
+              vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+    </script>
+   
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+        }
+        
+        body{
+            background: white;
+        }
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+        img{
+            width: 100%;
+        }
+        
+	</style>
+</head>
+<body>
+    <img src="http://o8c4tlqah.bkt.clouddn.com/pichd%EF%BC%8D201609081946.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script>
+    <script type="text/javascript">
+        var CurrentUrl = window.location.href
+
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+            _vds.push(['setAccountId', '8b53dcac6ad3c05e']);
+            (function() {
+              var vds = document.createElement('script');
+              vds.type='text/javascript';
+              vds.async = true;
+              vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+
+        var deviceWidth = $(window).width()
+        var fontSize = deviceWidth/750*100 +'px'
+        $('html').css({'font-size':fontSize})
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://7xrvvr.com2.z0.glb.qiniucdn.com/sha1.js"></script>
+    <title>一秒五单!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+            font-size: 100px;
+        }
+        
+        body{
+            background: white;
+        }
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+        
+        .top{
+            width: 7.5rem;
+            height: 4rem;
+            z-index: -1;
+        }
+
+        .buttons{
+            position: relative;
+            top: -0.3rem;
+            z-index: 999;
+        }
+
+        .btn{
+            line-height: 0.88rem;
+            width: 50%;
+            text-align: center;
+            border-bottom: 0.01rem solid rgb(218,220,224);
+            float: left;         
+            color: rgb(153,153,153);
+            font-size:0.34rem;
+        }
+
+        .cover{
+            border-bottom: 0.05rem solid rgb(34,163,230);
+            color: rgb(34,163,230);
+        }
+
+        .skills{
+            width: 6.5rem;
+            height: 13.36rem;
+            margin-left: 0.5rem;
+        }
+
+        .commission{
+            width: 6.5rem;
+            height: 6.32rem;
+            margin-left: 0.5rem;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <img src="http://o8c4tlqah.bkt.clouddn.com/banner-201611141535.png" alt="" class="top">
+    <div class="buttons clearfix">
+        <div id="btn-left" class="btn cover" onclick="left()">推广技巧</div>        
+        <div id="btn-right" class="btn" onclick="right()">佣金相关</div>
+    </div>
+    
+    <img src="http://o8c4tlqah.bkt.clouddn.com/%E6%8E%A8%E5%B9%BF%E6%8A%80%E5%B7%A7%EF%BC%8D201611141552.png" alt="" class="skills">
+    <img src="http://o8c4tlqah.bkt.clouddn.com/%E4%BD%A3%E9%87%91%E7%9B%B8%E5%85%B3-201611141738.png" alt="" class="commission" style="display: none;">
+    <script>
+        $(window).resize(function(){
+            deviceWidth =  $(window).width()
+            fontSize  = deviceWidth/750*100 +'px'
+            $('html').css({'font-size':fontSize})
+        });
+
+
+        function isWechat() {
+           var ua = navigator.userAgent.toLowerCase();
+           return ua.match(/MicroMessenger/i) == "micromessenger";
+        }
+
+        function left(){
+            $('#btn-left').addClass('cover')
+            $('#btn-right').removeClass('cover')
+            $('.skills').show()
+            $('.commission').hide()
+        }
+        function right(){
+            $('#btn-right').addClass('cover')
+            $('#btn-left').removeClass('cover')
+            $('.commission').show()
+            $('.skills').hide()
+        }
+
+    </script>
+
+    
+</body>
+
+</html>

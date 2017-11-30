@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="http://oi6dgk1k6.qnssl.com/jquery.min.2.1.4.js"></script>
+    <script type="text/javascript">
+        var CurrentUrl = window.location.href
+        var deviceWidth = $(window).width()
+
+
+        var fontSize = deviceWidth/750*100 +'px'
+
+        if(deviceWidth>=1000) fontSize = '50px'
+
+
+        $('html').css({'font-size':fontSize})
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+            _vds.push(['setAccountId', '8b53dcac6ad3c05e']);
+            (function() {
+              var vds = document.createElement('script');
+              vds.type='text/javascript';
+              vds.async = true;
+              vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+        (function(root) {
+            root._tt_config = true;
+            var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+            ta.src = document.location.protocol + '//' + 's3.pstatp.com/bytecom/resource/track_log/src/toutiao-track-log.js';
+            ta.onerror = function () {
+                var request = new XMLHttpRequest();
+                var web_url = window.encodeURIComponent(window.location.href);
+                var js_url  = ta.src;
+                var url = '//ad.toutiao.com/link_monitor/cdn_failed?web_url=' + web_url + '&js_url=' + js_url + '&convert_id=59248099161';
+                request.open('GET', url, true);
+                request.send(null);
+            }
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+        })(window);
+    </script>
+    <title>买保险，到底要怎样健康告知？常见案例分析、实操指南</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+            font-size: 100px;
+        }
+        
+        body{
+            background: white;
+        }
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+        
+        
+        .long{
+            display: block;
+            width: 100%;
+            height: 15rem;
+        }
+
+        .short{
+            display: block;
+            height: 12.79rem;
+            width: 100%;
+        }
+
+        .card{
+            width: 100%;
+            height: 4.7rem;
+            position: relative;
+        }
+
+        .card2{
+            width: 100%;
+            height: 4.7rem;
+            position: relative;
+            display: none;
+            
+        }
+
+    
+        input{
+            width: 6rem;
+            height: 0.9rem;
+            line-height: 0.9rem;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+
+            background: #FFFFFF;
+            border: 0.01rem solid #e6e6e6;
+            box-shadow: inset 0.00rem 0.01rem 0.02rem 0.00rem rgba(131,131,131,0.50);
+            border-radius: 0.08rem;
+
+
+
+            font-family: PingFangSC-Regular;
+            font-size: 0.3rem;
+            color: #333;
+            line-height: 0.9rem;
+
+            padding-left: 0.3rem;
+
+        }
+
+        .name{
+            top: 0.6rem;
+        }
+
+        .phone{
+            top: 1.7rem;
+        }
+
+        .button{
+            width: 6rem;
+            height: 1rem;
+            line-height: 1rem;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 2.9rem;
+            border-radius: 0.08rem;
+            font-family: PingFangSC-Regular;
+            font-size: 0.36rem;
+            text-align: center;
+        }
+
+        .ok{
+            background: #EF8006;
+            color: white;
+        }
+
+        .disabled{
+            background: #FF9354 !important;
+            opacity: 0.4 !important;
+            color: white !important;
+        }
+
+        .card2 img{
+            width: 1.44rem;
+            height: 1.44rem;
+            position: absolute;
+            top: 0.8rem;
+            margin:auto;
+            left: 0;
+            right: 0;
+        }
+
+        .card2 .title{
+            font-size:0.36rem;
+            color:#333333;
+            position: absolute;
+            top: 2.7rem;
+            margin:auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .card2 .desc{
+            font-size:0.26rem;
+            color:#666666;
+            position: absolute;
+            top: 3.4rem;
+            text-align: center;
+            line-height: 0.4rem;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        .hrefList{
+            width: 6.78rem;
+            position: relative;
+            left: 0.36rem;
+            padding-bottom: 0.8rem;
+        }
+
+        .title{
+            font-family: 'PingFangSC-Semibold';
+            font-size: 0.3rem;
+            color: #1A1A1A;
+            letter-spacing: 0px;
+            position: relative;
+            margin-top: 0.6rem;
+        }
+
+        .list{
+            background: #F5F5F5;
+            width: 100%;
+            border-radius: 0.08rem;
+             position: relative; 
+            margin-top:0.6rem;
+        }
+
+        .list .line{
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            border-bottom: 0.01rem solid #D6D6D6;
+            font-family: 'PingFangSC-Regular';
+            font-size: 0.28rem;
+            color: #333333;
+            letter-spacing: 0px;
+            padding-left: 0.48rem;
+            padding-right: 0.74rem;
+            position: relative;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap
+        }
+        
+        .list .line a{
+            color: #333;
+        }
+
+        .list .line:last-child{
+            border: none;
+        }   
+
+        .list .line img{
+            width: 0.14rem;
+            height: 0.26rem;
+            position: absolute;
+            bottom: 0.35rem;
+            right: 0.48rem;
+        }
+
+        .banner{
+            width: 100%;
+            height: 2rem;
+            display: block;
+        }
+            
+        img.prompt{
+            width: 100%;
+            height: 0.26rem;
+            display: block;
+        }
+
+        .msg{
+            background: #E64340;
+            font-size: 0.3rem;
+            line-height: 0.7rem;
+            text-align: center;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            padding: 0.08rem;
+            display: none;
+        }
+        
+
+    
+        @media screen and (min-width: 1000px) {
+            body{
+                background: #f5f5f5;
+            }
+    
+
+            .container {
+                width: 375px;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                background: white;
+            }
+
+        }
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="" class="long" id="img1">
+        <img src="" alt="" class="long" id="img2">
+        <img src="" alt="" class="long" id="img3">
+        <img src="" alt="" class="long" id="img4">
+        <img src="" alt="" class="long" id="img5">
+        <img src="" alt="" class="long" id="img6" style="height: 14.55rem;">
+        
+
+        <img src="https://oj8iny24b.qnssl.com/banner-201704201333.png" alt="" class="banner">
+
+        <div class="card">
+            <input type="text" class="name"  id="name" placeholder="怎么称呼您？">
+            <input type="text" class="phone" placeholder="请输入您的联系电话">
+            <div class="button ok" onclick="checkSubmit()" tt-data-click tt-data-convertid="59248099161" tt-data-eventtype="form" >立即咨询</div>
+        </div>
+
+        <div class="card2">
+             <img src="https://oj8iny24b.qnssl.com/201704142136.png" alt="">
+            <div class="title">您的预约已经提交</div>
+            <div class="desc">我们的理财顾问会在4小时内致电（非休息<br>时段），请准备好您的疑问。</div>
+        </div>
+
+        <div class="hrefList">
+            <img src="https://oj8iny24b.qnssl.com/prompt-201704201333.png" alt="" class="prompt">
+            <div class="msg"></div>
+        </div>
+
+    </div>
+    
+
+    <script src="http://www.baoxianshenqi.cn/js/hrefList.js"></script>
+    <script>
+        $(window).resize(function(){
+            deviceWidth =  $(window).width()
+            fontSize  = deviceWidth/750*100 +'px'
+            if(deviceWidth>=1000) fontSize = '50px'
+            $('html').css({'font-size':fontSize})
+        });
+
+        var prefix = 'http://oj8iny24b.qnssl.com/shicaozhinan'
+        var suffix = '_201704202130.jpg'
+
+
+
+        var total = 6
+
+        
+
+        function loadImg(i){
+            console.log(prefix+i+suffix)
+            $('#img'+i).attr('src',prefix+i+suffix).load(function(){
+                if(i==total) return
+                loadImg(++i)
+            })
+        }
+
+
+
+
+        $(function(){
+            loadImg(1)
+
+            var html = ''
+            hrefList.forEach(function(item){
+                html += '<div class="title">'+item.type+'</div>'
+
+                html += '<div class="list">'
+                item.items.forEach(function(e){
+                    html += '<div class="line"><a href="'+e.href+'">'+e.name+'</a><img src="https://oj8iny24b.qnssl.com/jiantou-201704201426.png" alt=""></div>'
+                })
+                html += '</div>'
+                            
+            })
+            $('.hrefList').append(html)
+        })
+
+        const IP = 'http://www.baoxianshenqi.cn/'
+        const ID = '-2'
+
+        var NAME
+        var PHONE
+        var CHANNEL = '如何健康告知013'
+
+        function checkSubmit(){
+            NAME = $('#name').val();
+            PHONE = $('.phone').val();
+
+
+            $('.button').toggleClass('disabled')
+
+
+            // console.log(NAME)
+            // console.log(PHONE)
+            if(validateName()){
+                $('.button').toggleClass('disabled')
+
+                return
+            }
+
+            if(validatePhone()){
+                $('.button').toggleClass('disabled')
+
+                return
+            }
+            // alert('success')
+            register()
+        }
+
+        function register(){
+            var postData = {
+              phonenumber:PHONE,
+              username:NAME,
+              id:ID,
+              channel:CHANNEL
+            }
+
+            $.ajax({
+                data: postData,
+                type: "POST",
+                url: IP+'/add_smartplan_yuyue2',
+                dataType: 'json',
+                cache: false,
+                timeout: 5000,
+                success: function(data){
+                    console.log(data)
+                    if(data.code==0){
+                        $('.card').hide();
+                        $('.card2').show();
+                    }else{
+                        fail()
+                        $('.button').toggleClass('disabled')
+                    }
+
+                 
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                   console.log(textStatus + " " + errorThrown);  
+                   fail()
+                }
+            });
+        }
+
+
+        function fail(){
+            prompt('预约失败，请尝试重新预约！')
+        }
+
+      
+
+        function prompt(msg){
+            $('.msg').html(msg).show()
+            setTimeout(function(){
+                $('.msg').hide()
+            },2000)
+
+
+
+
+          // layer.open({
+          //     content: msg,
+          //     style: 'background-color:#09C1FF; color:#fff; border:none;font-size:16px;border-radius:5px;',
+          //     time:10
+          // });
+        }
+
+        function validatePhone(flag){
+            if(!PHONE){
+                if(flag!=1){
+                    prompt('请填写手机号')
+                }
+                return true
+            }else if(!checkMobile(PHONE)){
+                if(flag!=1){
+                    prompt('手机号不合法，请重新输入')
+                }
+                return true
+            }
+            return false
+        }
+
+
+
+        function validateName(flag){
+            if(!NAME){
+                if(flag!=1){
+                    prompt('请填写姓名')
+                }
+                return true
+            }
+            return false
+
+        }
+
+
+
+        function validateCode(flag){
+            if(!AUTHCODE){
+                if(flag!=1){
+                    prompt('请填写验证码')
+                }
+                return true
+            }else if(!checkCode(AUTHCODE)){
+                if(flag!=1){
+                    prompt('验证码不合法，请重新输入')
+                }
+                // $('.authCode').val('')
+                return true
+            }
+            return false
+        }
+
+        function checkName(value){
+            if(value.length>10){
+                return false
+            }
+            return true
+        }
+
+        function checkMobile(value){
+            var reg =/^\d{11}$/g
+            if(!reg.test(value)){
+                return false;
+            }
+            return true
+        }
+
+        function checkCode(value){
+            var reg =/^\d{4}$/g
+            if(!reg.test(value)){
+                return false;
+            }
+            return true
+        }
+    </script>
+</body>
+
+</html>

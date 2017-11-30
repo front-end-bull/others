@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>余额说明</title>
+    <script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/750;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=750, user-scalable=no,target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+   
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+        }
+        
+        body{
+            background: white;
+            width: 750px;
+        }
+
+        /* iPad */
+        @media screen and (min-device-width:768px) and (max-device-width:800px){
+
+        }
+
+        /* PC */
+        @media screen and (min-width:801px){
+
+        } 
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+
+        img{
+            width: 750px;
+            height: 1454px;
+        }
+        
+        
+	</style>
+    <script type="text/javascript" src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script>
+</head>
+<body>
+    <img src="http://o8c4tlqah.bkt.clouddn.com/yueshuoming-201610101808.png" alt="">
+</body>
+</html>

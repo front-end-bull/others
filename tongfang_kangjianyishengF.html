@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script>
+    <script type="text/javascript">
+        var CurrentUrl = window.location.href
+        console.log(" -刚进页面url: "+CurrentUrl)
+        var patt = /&from=.*\d/
+        var result = CurrentUrl.match(patt)
+        if(result!=null){
+            CurrentUrl = CurrentUrl.substring(0,result.index)
+            console.log(" -截取后url: "+CurrentUrl)
+
+            window.location.href = CurrentUrl
+        }
+        
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+            _vds.push(['setAccountId', '8b53dcac6ad3c05e']);
+            (function() {
+              var vds = document.createElement('script');
+              vds.type='text/javascript';
+              vds.async = true;
+              vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+
+        var deviceWidth = $(window).width()
+    </script>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://7xrvvr.com2.z0.glb.qiniucdn.com/sha1.js"></script>
+    <title>同方康健一生</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+            font-size: 100px;
+        }
+        
+        body{
+            background: white;
+        }
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+    
+        .baoti{
+            width: 100%;
+            height: 5.77rem;
+        }
+
+        .tuiguangfei{
+            width: 100%;
+            height: 5.77rem;
+            padding-top: 0.25rem;
+        }
+
+        .neirong1{
+            width: 100%;
+            height: 26.51rem;
+            padding-top: 0.25rem;
+        }
+    </style>
+   
+</head>
+<body>
+    <img src="http://7xrfrt.com1.z0.glb.clouddn.com/biaoti-201608171459.jpg" alt="" class="baoti">
+    <img src="http://7xrfrt.com1.z0.glb.clouddn.com/tuiguangfei-201608171459.jpg" alt="" class="tuiguangfei">
+    <img src="http://7xrfrt.com1.z0.glb.clouddn.com/neirong-201608171459.jpg" alt="" class="neirong1">
+    <script>
+        var fontSize = deviceWidth/750*100 +'px'
+        $('html').css({'font-size':fontSize})
+
+        $(window).resize(function(){
+            deviceWidth =  $(window).width()
+
+            fontSize  = deviceWidth/750*100 +'px'
+            $('html').css({'font-size':fontSize})
+        });
+
+
+
+        function isWechat() {
+           var ua = navigator.userAgent.toLowerCase();
+           return ua.match(/MicroMessenger/i) == "micromessenger";
+        }
+
+        $(function(){
+            if(isWechat()){
+                $('.tuiguangfei').hide()
+                $('.neirong1').css({top:'0px'})
+            }
+        })
+
+    </script>
+
+    
+</body>
+
+</html>

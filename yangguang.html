@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="http://oi6dgk1k6.qnssl.com/jquery.min.2.1.4.js"></script>
+    
+    <script type="text/javascript">
+        var CurrentUrl = window.location.href
+        
+        var deviceWidth = $(window).width()
+        var fontSize = deviceWidth/750*100 +'px'
+        $('html').css({'font-size':fontSize})
+
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function(){
+            _vds.push(['setAccountId', '8b53dcac6ad3c05e']);
+            (function() {
+              var vds = document.createElement('script');
+              vds.type='text/javascript';
+              vds.async = true;
+              vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+
+    </script>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://7xrvvr.com2.z0.glb.qiniucdn.com/sha1.js"></script>
+    <title>免费领取保险</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        a { text-decoration: none; }
+
+        html{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+            font-size: 100px;
+        }
+        
+        body{
+            background: white;
+        }
+
+        .clearfix{ 
+            zoom: 1; 
+        } 
+
+        .clearfix:before, .clearfix:after{ 
+            display: table; 
+            line-height: 0; 
+            content: ""; 
+        } 
+        
+        .clearfix:after { 
+            clear: both; 
+        }
+
+        .msg{
+            background: white;
+            font-size: .30rem;
+            line-height: .70rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: .7rem;
+            color: #E64340;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+            height: 34.55rem;
+        }
+
+        .label{
+            font-size: 0.28rem;
+            color: #545454;
+            letter-spacing: 0px;
+            position: absolute;
+            left:0.71rem;
+            top: 6.04rem;
+            font-family: 'PingFangSC-Medium';
+        }
+
+        .input{
+            border: 0.02rem solid #D8D8D8;
+            width: 4.72rem;
+            height: 0.7rem;
+            position: absolute;
+            left: 2.07rem;
+            top: 5.9rem;
+            padding-left: 0.2rem;
+            /*line-height: 0.7rem;*/
+            font-size: 0.28rem;
+
+        }
+
+        .id{
+            top: 7.9rem;
+        }
+
+        .mobile{
+            top: 8.9rem;
+        }
+
+        input[type='checkbox']{
+            width: 0.39rem;
+            height: 0.38rem;
+            position: absolute;
+            left: 0.89rem;
+            top: 9.88rem;
+        }
+
+    
+
+        .desc{
+            font-family: 'FZLTTHK--GBK1-0';
+            font-size: .28rem;
+            color: #545454;
+            letter-spacing: 0px;
+            position: absolute;
+            left: 1.4rem;
+            top: 9.93rem;
+        }
+
+        a{
+            font-family:'FZLTTHK--GBK1-0';
+            font-size: 0.28rem;
+            color: #0000F0;
+            letter-spacing: 0px;
+        }
+
+        .sex{
+            font-family: 'PingFangSC-Medium';
+            font-size: 0.28rem;
+            color: #545454;
+            letter-spacing: 0px;
+            width: 1.44rem;
+            height: 0.7rem;
+            line-height: 0.7rem;
+            position: absolute;
+            left: 2.07rem;
+            top: 6.9rem;
+            border: 0.02rem solid #D8D8D8;
+            text-align: center;
+        }
+
+
+        .sex2{
+            left: 3.81rem;
+        }
+
+        .checked{
+            border: 0.02rem solid #FF600A;
+        }
+
+        .submit{
+            width: 2.9rem;
+            height: 0.8rem;
+            background: #999999;
+            font-family: 'PingFangSC-Medium';
+            font-size: 0.28rem;
+            color: #FFFFFF;
+            letter-spacing: 0px;
+            line-height: 0.8rem;
+            border-radius: 0.05rem;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 10.66rem;
+            text-align: center;
+        }
+
+        .agree{
+            background: #FF600A;
+        }
+
+        .success{
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 8.5rem;
+            color: red;
+            text-align: center;
+
+            font-size: 0.5rem;
+
+        }
+    </style>
+   
+</head>
+<body>
+    <img src="https://oj8iny24b.qnssl.com/201704072203.png.png" alt="">
+    <div class="over" >
+        <div class="label">姓<span style="color:white;">性别</span>名</div>
+        <div class="label" style="top: 7.06rem;">性<span style="color:white;">性别</span>别</div>
+        <div class="label" style="top:8.03rem;">身份证号</div>
+        <div class="label" style="top:9.03rem;">手<span style="color:white;">性别</span>机</div>
+        
+        <div class="sex sex1 checked" onclick="chooseSex(1)">男</div>
+        <div class="sex sex2" onclick="chooseSex(0)">女</div>
+        
+
+        <input type="input" class="input name" placeholder="请输入姓名">
+
+        <input type="input" class="input id" placeholder="请输入身份证号">
+        <input type="input" class="input mobile" placeholder="请输入手机号码">
+        
+        <input type="checkbox" name="agree" onclick="agree()">
+
+        <div class="desc">我已接受并阅读<a href="">《投保声明》</a><a href="">《投保声明》</a></div>
+
+        <div class="submit" onclick="submit()">立即领取</div>
+    </div>
+
+    <div class="msg" style="display: none;">
+        
+    </div>
+
+    <div class="success" style="display: none;">恭喜您，领取成功！</div>
+
+    <script>
+
+        // var NAME = $('.name').val()
+
+        var SEX = 1
+        var NAME
+        var ID
+        var MOBILE 
+        // var ID = $('')
+
+
+        var ISAGREE = false
+
+        function agree(){
+            ISAGREE = !ISAGREE
+            $('input[type="checkbox"]').attr('checked',ISAGREE)
+            $('.submit').toggleClass('agree')
+        }
+
+
+        function submit(){
+            if(!ISAGREE){
+                return
+            }
+
+            // console.log('jldsjof')
+
+
+            NAME = $('.name').val()
+            ID = $('.id').val()
+            MOBILE = $('.mobile').val()
+
+
+            console.log(' -name:',NAME)
+            console.log(' -id:',ID)
+            console.log(' -mobile:',MOBILE)
+
+
+            if(!NAME){
+                prompt('姓名不能为空')
+                return
+            }else if(!checkName(NAME)){
+                prompt('请输入正确的姓名')
+                return
+            }
+
+            if(!ID){
+                prompt('身份证不能为空')
+                return
+            }else if(!checkID(ID)){
+                prompt('请输入正确的身份证号')
+                return
+            }
+
+            if(!MOBILE){
+                prompt('手机号码不能为空')
+                return
+            }else if(!checkMobile(MOBILE)){
+                prompt('请输入正确的手机号')
+                return
+            }
+
+
+            ISAGREE = false
+            $('.submit').toggleClass('agree')
+
+
+
+            var postData = {
+                name:NAME,
+                id:ID,
+                sex:SEX,
+                mobile:MOBILE
+            }
+
+
+            $.ajax({
+                url:"http://www.baoxianshenqi.cn/yangguang",
+                type:'post',
+                data:postData,
+                success:function(data){
+                    console.log(data)
+                    var code = data.code
+                    if(code==0){
+                        ISAGREE = true
+                        // prompt('恭喜您领取成功')
+                        $('.submit').toggleClass('agree')
+
+                        $('.over').hide()
+
+                        $('.success').show()
+                        // 
+                    }else if(code==1){
+                        ISAGREE = true
+                        prompt(data.text)
+                        $('.submit').toggleClass('agree')
+
+                    }
+                }
+            })   
+        }
+
+
+
+        function chooseSex(flag){
+            SEX = flag
+            $('.sex1').toggleClass('checked')
+            $('.sex2').toggleClass('checked')
+        }
+
+
+        function checkMobile(value) {
+            var reg = /^\d{11}$/g
+            if (!reg.test(value)) {
+                return false;
+            }
+            return true
+        }
+
+
+        function checkName(value) {
+            if(value.length<2||value.length>17){
+                return false;
+            }
+            return true
+        }
+
+
+        function checkID(value) {
+            var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/g
+            if (!reg.test(value)) {
+                return false;
+            }
+            return true
+        }
+
+
+        $(window).resize(function(){
+            deviceWidth =  $(window).width()
+            fontSize  = deviceWidth/750*100 +'px'
+            $('html').css({'font-size':fontSize})
+        });
+
+        function prompt(msg){
+            $('.msg').html(msg)
+            $('.msg').show()
+            setTimeout(()=>{
+                $('.msg').hide()
+            },3000)
+        }
+
+
+    </script>
+</body>
+
+</html>
